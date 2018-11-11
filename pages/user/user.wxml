@@ -1,0 +1,19 @@
+<!--pages/user/user.wxml-->
+<view class='section'>
+  <view class='userinfo'>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='list'>
+    <view class='list-item'>活动管理</view>
+    <view class='list-item'>排号管理</view>
+    <view class='list-item'>我的消息</view>
+    <view class='list-item'>关于</view>
+    <view class='list-item'>版本</view>
+  </view>
+
+</view>

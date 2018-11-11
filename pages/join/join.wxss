@@ -1,0 +1,22 @@
+/* pages/join/join.wxss */
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 10rpx;
+  padding-left: 10rpx;
+  width: 16rem;
+  height: 40px;
+  margin: 50rpx;
+}
+
+button {
+  margin: 50rpx;
+  width: 16rem;
+}

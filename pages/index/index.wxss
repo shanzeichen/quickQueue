@@ -1,0 +1,33 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.main_item {
+  margin: 40rpx;
+  height: 300rpx;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+swiper, .slide-image {
+  width: 100%;
+  height: 400rpx;
+}
+
+
+.create {
+  background-color: #444ccc;
+}
+
+.join {
+  background-color: #25b360;
+}
+
+

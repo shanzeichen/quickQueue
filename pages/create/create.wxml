@@ -1,0 +1,24 @@
+<!--pages/create/create.wxml-->
+<view class='section'>
+  <view class='ItemInfo'>
+    <form bindsubmit='confirmItem'>
+      <text class='item_child'>活动名称</text>
+      <input class = 'item_child' class='item_input' name='name' bindblur='updateName' placeholder='请输入要创建的项目名称'>{{item.name}}</input>
+      <text class = 'item_child'>活动类型</text>
+      <radio-group class = 'item_child' bindchange='updateKind'>
+        <label ><radio value="temp" checked/>临时</label>
+        <label ><radio value="fixed" />长期</label>
+      </radio-group>
+      <view class='item_child'>
+        <text >号码限定</text>
+        <input class='num_limit' type='number' name='limit' bindblur='updateLimit' value='0'></input>
+        <text id='tips'>(说明:若不限数量，填入0即可)</text>
+      </view>
+      <text class='item_child'>活动介绍</text>
+      <textarea id='item_intro' placeholder="此处输入活动的相关介绍，不超过140个字" value='{{item.detail}}' name='detail' bindblur='updateDetail'/>
+    
+      <button form-type='submit' type='primary'>创建项目</button>
+      
+    </form>
+  </view>
+</view>

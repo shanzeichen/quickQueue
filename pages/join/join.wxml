@@ -1,0 +1,6 @@
+<!--pages/join/join.wxml-->
+<view class="section">
+  <input placeholder="请输入6位项目编码" bindblur='updateItemNo' type='number' auto-focus />
+  <button type='primary' bindtap='startQueue'>开始排号</button>
+  <button type='primary' bindtap='scanToJoin'>扫描二维码排号</button>
+</view>
