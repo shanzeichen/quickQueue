@@ -1,0 +1,6 @@
+<!--pages/create/create_success.wxml-->
+<view class='container'>
+  <view class='itemid'>{{item_id}}</view>
+  <image class='qr' src='{{item_qr_src}}'></image>
+</view>
+<view class='tips'>在加入活动页面，输入6位活动码或扫描活动二维码，即可加入本次活动</view>

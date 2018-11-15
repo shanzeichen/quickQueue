@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/join/join",
     "pages/create/create",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/create/create_success"
   ],
   "window": {
     "backgroundTextStyle": "light",
